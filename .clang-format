@@ -1,0 +1,8 @@
+# C 代码风格：保存时 clangd 按这份配置整理代码
+# 改完这几行存盘，下次保存文件就按新风格走
+BasedOnStyle: LLVM
+IndentWidth: 4            # 缩进 4 个空格，和 Java 保持一致
+TabWidth: 4
+BreakBeforeBraces: Attach # 大括号跟在语句后面，不单独占一行
+ColumnLimit: 0            # 不自动折行，一行想写多长写多长
+AllowShortFunctionsOnASingleLine: None
