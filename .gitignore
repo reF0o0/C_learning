@@ -1,7 +1,12 @@
+# macOS 系统文件
 .DS_Store
+._*
+
+# 编译产物
+# build/ 跟着每个章节目录走（ch02/build/…），output/ 是 F6 那个扩展的默认输出目录
 build/
+output/
 *.o
 *.out
 a.out
 *.dSYM/
-output/
