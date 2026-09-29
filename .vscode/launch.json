@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "调试当前文件 (LLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/build/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "构建当前文件",
+      "terminal": "integrated",
+      "initCommands": [
+        "settings set target.process.stop-on-exec false"
+      ]
+    },
+    {
+      "name": "调试当前文件（带命令行参数）",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/build/${fileBasenameNoExtension}",
+      "args": ["arg1", "arg2"],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "构建当前文件",
+      "terminal": "integrated"
+    }
+  ]
+}

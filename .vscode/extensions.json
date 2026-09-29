@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "danielpinto8zz6.c-cpp-compile-run",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "vadimcn.vscode-lldb"
+  ]
+}
