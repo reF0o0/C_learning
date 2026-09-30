@@ -17,6 +17,7 @@ bit 位/比特
 
 sizeof()运算符
 sizeof 是c语言的关键字，不是函数名
+sizeof(int) 必须带括号（因为 int 是类型），sizeof a 对变量可以不带
 */
 
 #include <stdio.h>

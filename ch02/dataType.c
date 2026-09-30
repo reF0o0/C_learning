@@ -41,12 +41,12 @@
                     }married;
 
 8.指针类型      关键字      变量声明
-指针类型                     int * ptr;   ptr(point record 指针记录/pointer)
+指针类型                     int * ptr;   ptr(pointer)
                             char * pStr;
 
 9.无类型        关键字      变量声明
 无类型          void        void Sort (int array[], int n);
-                            void * malloc(unsigned int size);
+                            void * malloc(size_t size);
 */
 
 int main(void) {
