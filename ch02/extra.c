@@ -29,11 +29,12 @@ int main(void) {
     int neg = -1;
     int big = 2147483647;
     printf("-1 的十六进制  %x\n", neg);
-    printf("'A' 的 ASCII   %d\n", 'A');                              // 字符就是小整数
+    printf("'A' 的 ASCII   %d\n", 'A');                                 // 字符就是小整数
     printf("char %zu 字节，int %zu 字节\n", sizeof(char), sizeof(int)); // 类型定大小
-    printf("int 最大值 + 1 %d\n", big + 1);                             // 溢出，绕回最小值
-    printf("float          %f\n", 123456.789e4f);                      // 精度不够
+    printf("扩大类型后加 1：%lld\n", (long long)big + 1);               // int 的范围取决于实现，本机为 -2147483648 ~ 2147483647
+    printf("float          %f\n", 123456.789e4f);                       // 精度不够
     printf("double         %f\n", 123456.789e4);
     return 0;
 }
 // sizeof 的结果类型是 size_t，所以上面用 %zu 输出而不是 %d
+// 有符号整数运算超出范围属于未定义行为，不能依赖回绕结果
